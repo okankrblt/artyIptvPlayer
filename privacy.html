@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | IPTV - Arty Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0A0A0A;
+            --primary-color: #F97316;
+            --text-color: #ffffff;
+            --text-muted: #a0a0a0;
+            --surface-color: #161616;
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --transition-premium: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding-top: 100px;
+        }
+
+        .ambient-glow {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+            filter: blur(80px);
+        }
+        .glow-1 { top: -10%; right: -10%; }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 900;
+            text-decoration: none;
+            color: var(--text-color);
+            letter-spacing: 1px;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .back-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: var(--transition-premium);
+        }
+
+        .back-link:hover { opacity: 0.8; transform: translateX(-5px); }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 5%;
+            background: var(--surface-color);
+            border-radius: 32px;
+            border: 1px solid var(--glass-border);
+            margin-bottom: 100px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; font-family: 'Outfit', sans-serif; }
+        .last-updated { color: var(--text-muted); margin-bottom: 40px; font-size: 0.9rem; }
+        h2 { color: var(--primary-color); margin: 40px 0 20px; font-size: 1.5rem; }
+        p { margin-bottom: 20px; color: var(--text-muted); }
+        ul { margin-bottom: 20px; padding-left: 20px; color: var(--text-muted); }
+        li { margin-bottom: 10px; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--glass-border);
+        }
+    </style>
+</head>
+<body>
+    <div class="ambient-glow glow-1"></div>
+    
+    <nav>
+        <a href="index.html" class="logo">ARTY PLAYER</a>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </nav>
+
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: March 24, 2026</p>
+
+        <p>IPTV - Arty ("we", "our", or "the App") respects your privacy and is committed to protecting your information. This Privacy Policy explains what data may be collected when you use the App, how it is used, and what choices you have regarding your data.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p><strong>User-Provided Playlist Data:</strong> The App allows users to add their own M3U playlist URLs, Xtream Codes credentials, or direct stream links. Playlist credentials are stored locally on your device. We do not transmit playlist credentials to our servers.</p>
+        
+        <p><strong>Analytics Data:</strong> We use Google Analytics for Firebase to collect anonymous usage information such as app launches, feature usage, and session stability. This is used only to improve app performance.</p>
+
+        <p><strong>Error Reports:</strong> Users may optionally send manual error reports which include device model, OS version, and technical logs. Sensitive credentials are masked before transmission.</p>
+
+        <p><strong>Advertising Data:</strong> The App uses Google AdMob which may collect identifiers (Android Advertising ID / IDFA) for fraud prevention and ad delivery.</p>
+
+        <h2>2. How We Use Information</h2>
+        <ul>
+            <li>Provide and maintain App functionality</li>
+            <li>Improve performance and stability</li>
+            <li>Analyze crashes and technical issues</li>
+            <li>Display advertisements where applicable</li>
+        </ul>
+        <p>We do not sell personal information.</p>
+
+        <h2>3. Data Storage and Retention</h2>
+        <p>Most user data remains stored locally on your device. We do not monitor, inspect, or control the content of user-provided playlists or media servers.</p>
+
+        <h2>4. Your Rights</h2>
+        <p>You may have the right to request access to, correction of, or deletion of stored anonymous data, or withdraw consent for advertising identifiers through your device settings.</p>
+
+        <h2>5. Third-Party Services</h2>
+        <p>The App relies on Google Play Services, AdMob, and Firebase Analytics. Each provider maintains its own privacy policy.</p>
+
+        <h2>6. Contact</h2>
+        <p>For privacy-related questions: <strong>artokn7@gmail.com</strong></p>
+
+        <h2>7. Content Responsibility</h2>
+        <p>IPTV - Arty does not provide, host, sell, or distribute media content. Users are solely responsible for the playlists and media sources they add.</p>
+    </div>
+
+    <footer>
+        &copy; 2026 Arty IPTV Player. All rights reserved.
+    </footer>
+</body>
+</html>

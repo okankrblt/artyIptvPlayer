@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use | IPTV - Arty Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0A0A0A;
+            --primary-color: #F97316;
+            --text-color: #ffffff;
+            --text-muted: #a0a0a0;
+            --surface-color: #161616;
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --transition-premium: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            padding-top: 100px;
+        }
+
+        .ambient-glow {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+            filter: blur(80px);
+        }
+        .glow-1 { top: -10%; right: -10%; }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 900;
+            text-decoration: none;
+            color: var(--text-color);
+            letter-spacing: 1px;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .back-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: var(--transition-premium);
+        }
+
+        .back-link:hover { opacity: 0.8; transform: translateX(-5px); }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 5%;
+            background: var(--surface-color);
+            border-radius: 32px;
+            border: 1px solid var(--glass-border);
+            margin-bottom: 100px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; font-family: 'Outfit', sans-serif; }
+        .last-updated { color: var(--text-muted); margin-bottom: 40px; font-size: 0.9rem; }
+        h2 { color: var(--primary-color); margin: 40px 0 20px; font-size: 1.5rem; }
+        p { margin-bottom: 20px; color: var(--text-muted); }
+        ul { margin-bottom: 20px; padding-left: 20px; color: var(--text-muted); }
+        li { margin-bottom: 10px; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--glass-border);
+        }
+    </style>
+</head>
+<body>
+    <div class="ambient-glow glow-1"></div>
+    
+    <nav>
+        <a href="index.html" class="logo">ARTY PLAYER</a>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </nav>
+
+    <div class="container">
+        <h1>Terms of Use</h1>
+        <p class="last-updated">Last Updated: March 24, 2026</p>
+
+        <p>By downloading, installing, or using IPTV - Arty, you agree to these Terms of Use.</p>
+
+        <h2>1. Nature of the Application</h2>
+        <p>IPTV - Arty is a neutral custom media player. The App does not provide, host, distribute, sell, or broadcast media content. No channels, movies, series, or live streams are supplied by the App. The App functions solely as a playback tool for user-provided media sources.</p>
+
+        <h2>2. User Responsibility</h2>
+        <p>Users are solely responsible for content added or accessed through the App. You agree that:</p>
+        <ul>
+            <li>You are responsible for ensuring legal access to media sources</li>
+            <li>You comply with applicable copyright laws</li>
+            <li>You do not use the App for unauthorized content access</li>
+        </ul>
+        <p>The App does not endorse copyright infringement.</p>
+
+        <h2>3. Prohibited Use</h2>
+        <p>You agree not to access unlawful content, violate copyright laws, or reverse engineer the App.</p>
+
+        <h2>4. Age Requirement</h2>
+        <p>By using the App, you confirm that you are at least 18 years old or have required guardian consent.</p>
+
+        <h2>5. Intellectual Property</h2>
+        <p>All original software, design, branding, and features remain the intellectual property of the developer except open-source components.</p>
+
+        <h2>6. Disclaimer of Warranties</h2>
+        <p>The App is provided on an "AS IS" basis. We do not guarantee uninterrupted playback or compatibility with every device.</p>
+
+        <h2>7. Limitation of Liability</h2>
+        <p>We are not responsible for user-added content, third-party stream failures, or service interruptions caused by external providers.</p>
+
+        <h2>8. Contact</h2>
+        <p>For legal notices or copyright concerns: <strong>artokn7@gmail.com</strong></p>
+    </div>
+
+    <footer>
+        &copy; 2026 Arty IPTV Player. All rights reserved.
+    </footer>
+</body>
+</html>

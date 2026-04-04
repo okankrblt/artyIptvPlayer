@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV - Arty Player | The Ultimate Free IPTV Player for M3U & Xtream</title>
+    <meta name="description" content="Download IPTV - Arty Player for free! The best media player for M3U playlists and Xtream Codes. Enjoy live TV, movies, and series with advanced player features and EPG guide.">
+    <meta name="keywords" content="IPTV Player, Free IPTV, M3U Player, Xtream Codes, Live TV App, Stream Player, EPG Guide, Smart IPTV, Ad-Free IPTV, HD Streaming">
+    <link rel="canonical" href="https://artyplayer.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://artyplayer.com/">
+    <meta property="og:title" content="IPTV - Arty Player | Premium Streaming Experience">
+    <meta property="og:description" content="The ultimate free IPTV player for M3U and Xtream Codes. Enjoy live TV, movies, and series with advanced feature.">
+    <meta property="og:image" content="assets/mockup.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://artyplayer.com/">
+    <meta property="twitter:title" content="IPTV - Arty Player | Premium Streaming Experience">
+    <meta property="twitter:description" content="The ultimate free IPTV player for M3U and Xtream Codes.">
+    <meta property="twitter:image" content="assets/mockup.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0A0A0A;
+            --primary-color: #F97316; /* Vibrant Orange */
+            --text-color: #ffffff;
+            --text-muted: #a0a0a0;
+            --surface-color: #161616;
+            --surface-hover: #222222;
+            --gradient-primary: linear-gradient(135deg, #F97316 0%, #FB923C 100%);
+            --transition-premium: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        body {
+            font-family: 'Inter', 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Ambient Glow Objects */
+        .ambient-glow {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(249, 115, 22, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+            filter: blur(80px);
+        }
+
+        .glow-1 { top: -10%; right: -10%; }
+        .glow-2 { bottom: -10%; left: -10%; }
+
+        h1, h2, h3 {
+            font-weight: 900;
+            letter-spacing: -0.03em;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--text-color);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .logo img {
+            height: 32px;
+            width: auto;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .lang-switch {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            color: var(--text-color);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: var(--transition-premium);
+        }
+
+        .lang-switch:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 5% 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            flex: 1;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        .badge {
+            background: rgba(249, 115, 22, 0.1);
+            color: var(--primary-color);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 24px;
+            border: 1px solid rgba(249, 115, 22, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            line-height: 1;
+            margin-bottom: 24px;
+            color: var(--text-color);
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 550px;
+        }
+
+        .cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .btn {
+            padding: 16px 32px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: var(--transition-premium);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px -12px rgba(249, 115, 22, 0.6);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--glass-border);
+            color: var(--text-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary-color);
+            background: rgba(249, 115, 22, 0.05);
+        }
+
+        /* Hero Visual */
+        .hero-visual {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .mockup-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            perspective: 1000px;
+        }
+
+        .mockup-container img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 30px 60px rgba(0,0,0,0.8));
+            transform: rotateY(-15deg) rotateX(10deg);
+            transition: var(--transition-premium);
+        }
+
+        .mockup-container:hover img {
+            transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+        }
+
+        /* Features Grid */
+        .features {
+            padding: 100px 5%;
+            background: #0D0D0D;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: var(--surface-color);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-premium);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top left, rgba(249, 115, 22, 0.1), transparent 70%);
+            opacity: 0;
+            transition: var(--transition-premium);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: var(--surface-hover);
+            border-color: rgba(249, 115, 22, 0.3);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* Freemium Comparison */
+        .comparison {
+            padding: 100px 5%;
+        }
+
+        .comp-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .comp-box {
+            padding: 40px;
+            border-radius: 32px;
+            background: var(--surface-color);
+            border: 1px solid var(--glass-border);
+        }
+
+        .comp-box.premium {
+            border: 2px solid var(--primary-color);
+            position: relative;
+        }
+
+        .comp-box.premium::after {
+            content: "RECOMMENDED";
+            position: absolute;
+            top: -15px;
+            right: 40px;
+            background: var(--primary-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            font-weight: 800;
+        }
+
+        .comp-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+        }
+
+        .comp-list {
+            list-style: none;
+        }
+
+        .comp-list li {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-muted);
+        }
+
+        .comp-list li::before {
+            content: "✓";
+            color: var(--primary-color);
+            font-weight: 900;
+        }
+
+        /* Footer */
+        footer {
+            padding: 80px 5% 40px;
+            border-top: 1px solid var(--glass-border);
+            background: #050505;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-info p {
+            color: var(--text-muted);
+            margin-top: 20px;
+            max-width: 400px;
+        }
+
+        .footer-links h4 {
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a, .footer-links button {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition-premium);
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .footer-links a:hover, .footer-links button:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--glass-border);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: var(--surface-color);
+            padding: 60px;
+            border-radius: 32px;
+            max-width: 900px;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            border: 1px solid var(--glass-border);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition-premium);
+        }
+
+        .close-modal:hover {
+            color: var(--primary-color);
+        }
+
+        /* Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .reveal.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 160px;
+            }
+            .hero-content {
+                margin-bottom: 80px;
+            }
+            .cta-group {
+                justify-content: center;
+            }
+            .comp-container {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .footer-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-visual {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Arty IPTV" onerror="this.src='https://via.placeholder.com/32?text=A'">
+            ARTY PLAYER
+        </a>
+        <div class="nav-actions">
+            <select class="lang-switch" id="langSelect" onchange="setLanguage(this.value)">
+                <option value="en">EN</option>
+                <option value="tr">TR</option>
+            </select>
+            <a href="https://play.google.com/store" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;" data-i18n="navDownload">Download</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge" data-i18n="heroBadge">Free & Powerful</div>
+                <h1 id="heroTitle">
+                    <span data-i18n="heroTitle1">Elevate Your</span>
+                    <span data-i18n="heroTitle2">IPTV Experience</span>
+                </h1>
+                <p id="heroDesc" data-i18n="heroDesc">The most advanced and user-friendly media player for M3U and Xtream Codes. Import your content in seconds and enjoy seamless streaming.</p>
+                <div class="cta-group">
+                    <a href="https://play.google.com/store" class="btn btn-primary" data-i18n="ctaMain">Get it on Play Store</a>
+                    <a href="#features" class="btn btn-outline" data-i18n="ctaSecondary">Explore Features</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="mockup-container">
+                    <img src="assets/mockup.png" alt="Arty UI Mockup">
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="section-header reveal">
+                <h2 data-i18n="featuresTitle">Premium Features</h2>
+                <p data-i18n="featuresSubtitle">Everything you need for a crystal-clear entertainment journey.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <span class="feature-icon">🚀</span>
+                    <h3 data-i18n="f1Title">Jet Speed Loading</h3>
+                    <p data-i18n="f1Desc">Import your playlists locally and enjoy zero-lag channel switching.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <span class="feature-icon">🎬</span>
+                    <h3 data-i18n="f2Title">Advanced Player</h3>
+                    <p data-i18n="f2Desc">Multi-audio, subtitles, aspect ratio control, and PiP (Picture-in-Picture) mode.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <span class="feature-icon">📅</span>
+                    <h3 data-i18n="f3Title">EPG Guide</h3>
+                    <p data-i18n="f3Desc">Keep track of live broadcasts and see what's playing now and next.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <span class="feature-icon">📱</span>
+                    <h3 data-i18n="f4Title">Smart Organization</h3>
+                    <p data-i18n="f4Desc">Easily manage your channels with Categories, Favorites, and Watch History.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <span class="feature-icon">🔒</span>
+                    <h3 data-i18n="f6Title">Secure & Private</h3>
+                    <p data-i18n="f6Desc">Your data stays on your device. Your privacy is our priority.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <a href="#" class="logo">ARTY PLAYER</a>
+                <p data-i18n="footerDesc">The ultimate media player for enthusiasts who demand speed and elegance.</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="legalTitle">Legal</h4>
+                <ul>
+                    <li><a href="terms.html" data-i18n="linkTerms">Terms of Use</a></li>
+                    <li><a href="privacy.html" data-i18n="linkPrivacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="supportTitle">Support</h4>
+                <ul>
+                    <li><a href="mailto:artokn7@gmail.com">Email Support</a></li>
+                    <li><a href="ads.txt">ads.txt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Arty IPTV Player. <span data-i18n="copyNote">For entertainment purposes only.</span>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                navDownload: "Download",
+                heroBadge: "Free & Powerful",
+                heroTitle1: "Elevate Your",
+                heroTitle2: "IPTV Experience",
+                heroDesc: "IPTV - Arty Player is the most advanced and user-friendly media player designed for watching your favorite live TV channels, movies, and series. Best of all, it's free to use!",
+                ctaMain: "Get it on Play Store",
+                ctaSecondary: "Explore Features",
+                featuresTitle: "Premium Features",
+                featuresSubtitle: "Everything you need for a crystal-clear entertainment journey.",
+                f1Title: "Jet Speed Loading",
+                f1Desc: "Import your playlists locally and enjoy zero-lag channel switching.",
+                f2Title: "Advanced Player",
+                f2Desc: "Multi-audio support, subtitles, aspect ratio adjustments, and PiP mode.",
+                f3Title: "EPG Guide",
+                f3Desc: "Keep track of live broadcasts and see what's playing now and next.",
+                f4Title: "Smart Organization",
+                f4Desc: "Easily manage your channels with Categories, Favorites, and History.",
+                f6Title: "Secure & Private",
+                f6Desc: "Your playlist data stays on your device; your privacy is our priority.",
+                legalTitle: "Legal",
+                supportTitle: "Support",
+                linkTerms: "Terms of Use",
+                linkPrivacy: "Privacy Policy",
+                footerDesc: "Elevate your IPTV experience with the most powerful player on the market.",
+                copyNote: "For entertainment purposes only."
+            },
+            tr: {
+                navDownload: "İndir",
+                heroBadge: "Ücretsiz ve Güçlü",
+                heroTitle1: "IPTV Deneyiminizi",
+                heroTitle2: "Zirveye Taşıyın",
+                heroDesc: "IPTV - Arty Player, favori canlı TV kanallarınızı, film ve dizilerinizi izlemek için tasarlanmış en modern medya oynatıcıdır. Üstelik tamamen ücretsiz!",
+                ctaMain: "Play Store'dan İndir",
+                ctaSecondary: "Özellikleri Keşfet",
+                featuresTitle: "Premium Özellikler",
+                featuresSubtitle: "Kesintisiz bir eğlence yolculuğu için ihtiyacınız olan her şey.",
+                f1Title: "Jet Hızında Başlangıç",
+                f1Desc: "Oynatma listelerinizi yerel olarak yükleyin ve kanal geçişlerinde gecikme yaşamayın.",
+                f2Title: "Gelişmiş Oynatıcı",
+                f2Desc: "Çoklu ses desteği, altyazı seçenekleri, ekran oranı ve PiP modu.",
+                f3Title: "EPG Rehberi",
+                f3Desc: "Canlı yayın akışını takip edin, hangi programın ne zaman başlayacağını görün.",
+                f4Title: "Akıllı Organizasyon",
+                f4Desc: "Kanallarınızı Kategoriler, Favoriler ve Geçmiş ile kolayca yönetin.",
+                f6Title: "Güvenli ve Özel",
+                f6Desc: "Verileriniz cihazınızda kalır, gizliliğiniz bizim için önceliktir.",
+                legalTitle: "Yasal",
+                supportTitle: "Destek",
+                linkTerms: "Kullanım Koşulları",
+                linkPrivacy: "Gizlilik Politikası",
+                footerDesc: "Piyasadaki en güçlü oynatıcı ile IPTV deneyiminizi bir üst seviyeye çıkarın.",
+                copyNote: "Sadece eğlence amaçlıdır."
+            }
+        };
+
+        function setLanguage(lang) {
+            localStorage.setItem('lang', lang);
+            updateContent(lang);
+        }
+
+        function updateContent(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+            document.documentElement.lang = lang;
+        }
+
+        // Initialize Language
+        const savedLang = localStorage.getItem('lang') || (navigator.language.startsWith('tr') ? 'tr' : 'en');
+        document.getElementById('langSelect').value = savedLang;
+        updateContent(savedLang);
+
+        // Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('in-view');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+</body>
+</html>

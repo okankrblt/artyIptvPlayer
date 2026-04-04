@@ -1,0 +1,110 @@
+
+Privacy Policy
+
+Last Updated: March 24, 2026
+
+IPTV - Arty ("we", "our", or "the App") respects your privacy and is committed to protecting your information. This Privacy Policy explains what data may be collected when you use the App, how it is used, and what choices you have regarding your data.
+1. Information We Collect
+User-Provided Playlist Data
+
+The App allows users to add their own M3U playlist URLs, Xtream Codes credentials, or direct stream links in order to access media streams provided by third-party sources.
+
+Playlist credentials are primarily stored locally on your device.
+
+We do not intentionally transmit playlist credentials to our servers unless required for optional cloud synchronization or when you explicitly submit diagnostic information.
+Analytics Data
+
+We use Google Analytics for Firebase to collect anonymous usage information such as app launches, feature usage, navigation patterns, and session stability.
+
+This information does not directly identify individual users and is used only to improve app performance and reliability.
+Error Reports
+
+Users may optionally send manual support or error reports.
+
+These reports may include:
+
+device model
+
+operating system version
+
+technical logs
+
+user-provided issue descriptions
+
+Sensitive playlist credentials are removed or masked before transmission whenever possible.
+Advertising Data
+
+The App uses Google AdMob to display advertisements.
+
+AdMob may collect identifiers such as:
+
+Android Advertising ID
+
+Apple Identifier for Advertisers (IDFA)
+
+These identifiers may be used for fraud prevention, ad delivery, and ad personalization depending on your device settings and consent preferences.
+Cloud Synchronization
+
+If cloud features are enabled, selected app data such as favorites, settings, and playlist metadata may be securely stored using Supabase infrastructure.
+2. How We Use Information
+
+Collected information is used only to:
+
+provide and maintain App functionality
+
+improve performance and stability
+
+analyze crashes and technical issues
+
+support optional cloud synchronization
+
+display advertisements where applicable
+
+We do not sell personal information.
+3. Data Storage and Retention
+
+Most user data remains stored locally on your device.
+
+If cloud synchronization is used:
+
+synchronized data is retained only as long as needed to provide the service
+
+users may remove stored data by clearing app data or contacting support
+
+We do not monitor, inspect, or control the content of user-provided playlists or media servers.
+4. Your Rights
+
+Depending on your location, you may have the right to:
+
+request access to your personal data
+
+request correction or deletion of stored data
+
+withdraw consent for analytics or advertising identifiers
+5. Third-Party Services
+
+The App may rely on:
+
+Google Play Services
+
+AdMob
+
+Firebase Analytics / Crashlytics
+
+Supabase
+
+Each provider maintains its own privacy policy.
+6. Contact
+
+For privacy-related questions or data requests:
+
+artokn7@gmail.com
+7. Content Responsibility
+
+IPTV - Arty does not provide, host, sell, or distribute media content.
+
+Users are solely responsible for the playlists and media sources they add.
+8. Policy Updates
+
+This Privacy Policy may be updated periodically.
+
