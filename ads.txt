@@ -1,3 +1,3 @@
 # Arty IPTV Player - ads.txt
 # Replace these with your actual AdMob App Ads settings.
-google.com, pub-0000000000000000, DIRECT
+google.com, pub-3712946133560112, DIRECT, f08c47fec0942fa0
