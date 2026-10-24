@@ -1,7 +1,7 @@
 
 Privacy Policy
 
-Last Updated: March 24, 2026
+Last Updated: October 24, 2026
 
 IPTV - Arty ("we", "our", or "the App") respects your privacy and is committed to protecting your information. This Privacy Policy explains what data may be collected when you use the App, how it is used, and what choices you have regarding your data.
 1. Information We Collect
@@ -12,9 +12,9 @@ The App allows users to add their own M3U playlist URLs, Xtream Codes credential
 Playlist credentials are primarily stored locally on your device.
 
 We do not intentionally transmit playlist credentials to our servers unless required for optional cloud synchronization or when you explicitly submit diagnostic information.
-Analytics Data
+Analytics Data (Android app)
 
-We use Google Analytics for Firebase to collect anonymous usage information such as app launches, feature usage, navigation patterns, and session stability.
+On Android, we use Google Analytics for Firebase to collect anonymous usage information such as app launches, feature usage, navigation patterns, and session stability.
 
 This information does not directly identify individual users and is used only to improve app performance and reliability.
 Error Reports
@@ -32,20 +32,18 @@ technical logs
 user-provided issue descriptions
 
 Sensitive playlist credentials are removed or masked before transmission whenever possible.
-Advertising Data
+Advertising Data (Android app)
 
-The App uses Google AdMob to display advertisements.
+On Android, the App uses Google AdMob to display advertisements.
 
 AdMob may collect identifiers such as:
 
 Android Advertising ID
 
-Apple Identifier for Advertisers (IDFA)
-
 These identifiers may be used for fraud prevention, ad delivery, and ad personalization depending on your device settings and consent preferences.
-Cloud Synchronization
+Cloud Synchronization (Android app)
 
-If cloud features are enabled, selected app data such as favorites, settings, and playlist metadata may be securely stored using Supabase infrastructure.
+If cloud features are enabled in the Android app, selected app data such as favorites, settings, and playlist metadata may be securely stored using Supabase infrastructure.
 2. How We Use Information
 
 Collected information is used only to:
@@ -58,14 +56,14 @@ analyze crashes and technical issues
 
 support optional cloud synchronization
 
-display advertisements where applicable
+display advertisements where applicable (Android app)
 
 We do not sell personal information.
 3. Data Storage and Retention
 
 Most user data remains stored locally on your device.
 
-If cloud synchronization is used:
+If cloud synchronization is used in the Android app:
 
 synchronized data is retained only as long as needed to provide the service
 
@@ -80,10 +78,10 @@ request access to your personal data
 
 request correction or deletion of stored data
 
-withdraw consent for analytics or advertising identifiers
+withdraw consent for analytics or advertising identifiers (Android app)
 5. Third-Party Services
 
-The App may rely on:
+The Android app may rely on:
 
 Google Play Services
 
@@ -92,6 +90,8 @@ AdMob
 Firebase Analytics / Crashlytics
 
 Supabase
+
+The iOS app relies only on Firebase Crashlytics (see section 8).
 
 Each provider maintains its own privacy policy.
 6. Contact
@@ -104,7 +104,77 @@ artokn7@gmail.com
 IPTV - Arty does not provide, host, sell, or distribute media content.
 
 Users are solely responsible for the playlists and media sources they add.
-8. Policy Updates
+8. iOS App (iPhone and iPad)
+
+This section describes the iOS app "Arty Player" (bundle ID com.arty.iptv) for iPhone and iPad. The iOS app does not use Google AdMob, Google Analytics for Firebase, or Supabase. The sections above that describe those services apply to the Android app.
+
+What the iOS app does not do
+
+It has no accounts and no sign-in.
+
+It does not send your playlists, credentials, favorites, history or settings to any server operated by us.
+
+It does not track you and does not show advertising.
+
+It does not use any advertising identifier, including Apple's IDFA.
+
+It does not show the App Tracking Transparency prompt, because it does not track.
+
+Data stored on your device
+
+The app stores the following only on your device, in the app's Application Support folder and UserDefaults:
+
+playlists you add, including M3U playlist URLs and Xtream Codes logins
+
+favorites
+
+viewing history
+
+settings
+
+the electronic program guide (EPG) cache
+
+Xtream Codes login details are stored on your device. They are sent only to the server you entered for that login.
+
+Network connections
+
+The app connects only to:
+
+the playlist, Xtream Codes, EPG and stream URLs that you enter. These are often plain HTTP addresses, because many IPTV servers do not use HTTPS.
+
+Firebase, to send crash reports (see below).
+
+Crash reports (Firebase Crashlytics)
+
+The app uses Firebase Crashlytics, a crash reporting service provided by Google, to receive crash reports. Crashlytics collects:
+
+crash reports and diagnostics, including stack traces
+
+device model
+
+operating system version
+
+app version
+
+an installation identifier
+
+Purpose: app stability. We use these reports to find and fix crashes. Crash reports are not linked to your identity, and they are not used for tracking, analytics or advertising.
+
+Retention: Crashlytics keeps crash data according to Firebase's default settings, which is up to 90 days. For how Google handles this data, see Google's Firebase privacy information: https://firebase.google.com/support/privacy
+
+Deleting your data
+
+Settings → "Reset All Data" deletes all of the app's data stored on your device.
+
+Uninstalling the app removes all of its data from your device.
+
+For questions about crash reports that have already been sent, contact us at artokn7@gmail.com.
+
+Children's privacy
+
+The iOS app is not directed to children under 13. Because the app has no accounts and does not collect personal information for identification, it does not ask children for personal details.
+
+9. Policy Updates
 
 This Privacy Policy may be updated periodically.
 

@@ -108,25 +108,25 @@
 
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: March 24, 2026</p>
+        <p class="last-updated">Last Updated: October 24, 2026</p>
 
         <p>IPTV - Arty ("we", "our", or "the App") respects your privacy and is committed to protecting your information. This Privacy Policy explains what data may be collected when you use the App, how it is used, and what choices you have regarding your data.</p>
 
         <h2>1. Information We Collect</h2>
         <p><strong>User-Provided Playlist Data:</strong> The App allows users to add their own M3U playlist URLs, Xtream Codes credentials, or direct stream links. Playlist credentials are stored locally on your device. We do not transmit playlist credentials to our servers.</p>
         
-        <p><strong>Analytics Data:</strong> We use Google Analytics for Firebase to collect anonymous usage information such as app launches, feature usage, and session stability. This is used only to improve app performance.</p>
+        <p><strong>Analytics Data (Android app):</strong> On Android, we use Google Analytics for Firebase to collect anonymous usage information such as app launches, feature usage, and session stability. This is used only to improve app performance.</p>
 
         <p><strong>Error Reports:</strong> Users may optionally send manual error reports which include device model, OS version, and technical logs. Sensitive credentials are masked before transmission.</p>
 
-        <p><strong>Advertising Data:</strong> The App uses Google AdMob which may collect identifiers (Android Advertising ID / IDFA) for fraud prevention and ad delivery.</p>
+        <p><strong>Advertising Data (Android app):</strong> On Android, the App uses Google AdMob, which may collect the Android Advertising ID for fraud prevention and ad delivery.</p>
 
         <h2>2. How We Use Information</h2>
         <ul>
             <li>Provide and maintain App functionality</li>
             <li>Improve performance and stability</li>
             <li>Analyze crashes and technical issues</li>
-            <li>Display advertisements where applicable</li>
+            <li>Display advertisements where applicable (Android app)</li>
         </ul>
         <p>We do not sell personal information.</p>
 
@@ -134,16 +134,64 @@
         <p>Most user data remains stored locally on your device. We do not monitor, inspect, or control the content of user-provided playlists or media servers.</p>
 
         <h2>4. Your Rights</h2>
-        <p>You may have the right to request access to, correction of, or deletion of stored anonymous data, or withdraw consent for advertising identifiers through your device settings.</p>
+        <p>You may have the right to request access to, correction of, or deletion of stored anonymous data or, on Android, withdraw consent for advertising identifiers through your device settings.</p>
 
         <h2>5. Third-Party Services</h2>
-        <p>The App relies on Google Play Services, AdMob, and Firebase Analytics. Each provider maintains its own privacy policy.</p>
+        <p>The Android app relies on Google Play Services, AdMob, Firebase Analytics, and Firebase Crashlytics. The iOS app relies only on Firebase Crashlytics (see section 8). Each provider maintains its own privacy policy.</p>
 
         <h2>6. Contact</h2>
         <p>For privacy-related questions: <strong>artokn7@gmail.com</strong></p>
 
         <h2>7. Content Responsibility</h2>
         <p>IPTV - Arty does not provide, host, sell, or distribute media content. Users are solely responsible for the playlists and media sources they add.</p>
+
+        <h2>8. iOS App (iPhone and iPad)</h2>
+        <p>This section describes the iOS app "Arty Player" (bundle ID com.arty.iptv) for iPhone and iPad. The iOS app does not use Google AdMob, Google Analytics for Firebase, or Supabase. The sections above that describe those services apply to the Android app.</p>
+
+        <p><strong>What the iOS app does not do:</strong></p>
+        <ul>
+            <li>It has no accounts and no sign-in.</li>
+            <li>It does not send your playlists, credentials, favorites, history or settings to any server operated by us.</li>
+            <li>It does not track you and does not show advertising.</li>
+            <li>It does not use any advertising identifier, including Apple's IDFA.</li>
+            <li>It does not show the App Tracking Transparency prompt, because it does not track.</li>
+        </ul>
+
+        <p><strong>Data stored on your device:</strong> The app stores the following only on your device, in the app's Application Support folder and UserDefaults:</p>
+        <ul>
+            <li>playlists you add, including M3U playlist URLs and Xtream Codes logins</li>
+            <li>favorites</li>
+            <li>viewing history</li>
+            <li>settings</li>
+            <li>the electronic program guide (EPG) cache</li>
+        </ul>
+        <p>Xtream Codes login details are stored on your device. They are sent only to the server you entered for that login.</p>
+
+        <p><strong>Network connections:</strong> The app connects only to:</p>
+        <ul>
+            <li>the playlist, Xtream Codes, EPG and stream URLs that you enter. These are often plain HTTP addresses, because many IPTV servers do not use HTTPS.</li>
+            <li>Firebase, to send crash reports (see below).</li>
+        </ul>
+
+        <p><strong>Crash reports (Firebase Crashlytics):</strong> The app uses Firebase Crashlytics, a crash reporting service provided by Google, to receive crash reports. Crashlytics collects:</p>
+        <ul>
+            <li>crash reports and diagnostics, including stack traces</li>
+            <li>device model</li>
+            <li>operating system version</li>
+            <li>app version</li>
+            <li>an installation identifier</li>
+        </ul>
+        <p>Purpose: app stability. We use these reports to find and fix crashes. Crash reports are not linked to your identity, and they are not used for tracking, analytics or advertising.</p>
+        <p>Retention: Crashlytics keeps crash data according to Firebase's default settings, which is up to 90 days. For how Google handles this data, see <a href="https://firebase.google.com/support/privacy" style="color: var(--primary-color);">Google's Firebase privacy information</a>.</p>
+
+        <p><strong>Deleting your data:</strong></p>
+        <ul>
+            <li>Settings → "Reset All Data" deletes all of the app's data stored on your device.</li>
+            <li>Uninstalling the app removes all of its data from your device.</li>
+        </ul>
+        <p>For questions about crash reports that have already been sent, contact us at <strong>artokn7@gmail.com</strong>.</p>
+
+        <p><strong>Children's privacy:</strong> The iOS app is not directed to children under 13. Because the app has no accounts and does not collect personal information for identification, it does not ask children for personal details.</p>
     </div>
 
     <footer>

@@ -1,6 +1,6 @@
 Terms of Use
 
-Last Updated: March 24, 2026
+Last Updated: October 24, 2026
 
 By downloading, installing, or using IPTV - Arty, you agree to these Terms of Use.
 1. Nature of the Application
@@ -25,6 +25,8 @@ you comply with applicable copyright laws
 you do not use the App for unauthorized content access
 
 The App does not endorse copyright infringement.
+
+The App ships with no content. You are solely responsible for having the right to access any playlist, stream or media source you add.
 3. Prohibited Use
 
 You agree not to:
@@ -57,7 +59,31 @@ service interruptions caused by external providers
 8. Changes to Terms
 
 These Terms may be updated periodically.
-9. Copyright Contact
+9. Additional terms for Apple devices (iOS / iPadOS)
+
+If you download the iOS app from the Apple App Store and use it on an iPhone or iPad, the following terms also apply. They paraphrase the minimum terms that Apple requires in end-user license agreements for licensed applications. Apple is not a party to this agreement.
+
+Parties: This agreement is between you and the developer (IPTV - Arty), not Apple. The developer, not Apple, is solely responsible for the app and its content.
+
+Scope of license: The license granted to you is limited to a non-transferable license to use the app on Apple-branded products that you own or control, as permitted by the usage rules in Apple's App Store terms.
+
+Maintenance and support: The developer, not Apple, is responsible for any maintenance and support of the app, as required by these Terms or by applicable law. Apple has no obligation to provide maintenance or support for the app.
+
+Warranty: The developer, not Apple, is responsible for any product warranties that apply to the app, to the extent they are not effectively disclaimed. If the app fails to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price of the app to you, if any. To the maximum extent permitted by law, Apple has no other warranty obligation for the app. Any other claims, losses, liabilities, damages, costs or expenses attributable to a failure to conform to a warranty are the developer's sole responsibility.
+
+Product claims: The developer, not Apple, is responsible for addressing any claim by you or a third party relating to the app or your possession or use of it. This includes product liability claims, claims that the app does not comply with applicable legal or regulatory requirements, and claims under consumer protection, privacy or similar legislation.
+
+Intellectual property claims: If a third party claims that the app, or your possession and use of it, infringes that party's intellectual property rights, the developer, not Apple, is solely responsible for investigating, defending, settling and discharging that claim.
+
+Legal compliance: You represent and warrant that you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country, and that you are not listed on any U.S. Government list of prohibited or restricted parties.
+
+Developer contact: For questions, complaints or claims about the app, contact the developer at artokn7@gmail.com.
+
+Third-party terms: You must comply with the applicable third-party terms of agreement when using the app. For example, if you use an IPTV provider's service with the app, you must comply with that provider's terms.
+
+Third-party beneficiary: The developer and you acknowledge that Apple, and Apple's subsidiaries, are third-party beneficiaries of this agreement. Once you accept these terms, Apple will have the right (and will be deemed to have accepted the right) to enforce them against you as a third-party beneficiary.
+
+10. Copyright Contact
 
 For legal notices or copyright concerns:
 
